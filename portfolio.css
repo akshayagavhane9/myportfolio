@@ -9,6 +9,26 @@ header {
     
     
 }
+body {
+    min-width: 100%;
+    background-attachment: fixed;
+    min-height: 20vh;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+@media (max-width: 768px) {
+    .body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+@media (min-width: 350px) and (max-wid366px) {
+    .body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
 
 nav {
     width: 100%;
@@ -164,7 +184,7 @@ video {
 
 .about-section .about-content .column-left img {
     height: 70%;
-    width: 90%;
+    width: 83%;
     object-fit: cover;
     border-radius: 6px;
     margin-top: 20px;
@@ -242,8 +262,7 @@ video {
 
     .about-section .about-content .column-right div,
     .about-section .about-content .column-right p {
-        padding-top: 20px;
-        padding-right: 0;
+        padding: 30px;
     }
 }
 /*Skills*/
@@ -364,12 +383,12 @@ p {
     }
 }
 
- /*Expirence*/
+ /*Experirence*/
  .experience-section {
     color: black;
     background-color: #9f86c030;
     background-size: cover;
-    padding: 50px 20px; /* Adjust padding as needed */
+    padding: 50px 20px; 
     text-align: center;
 }
 
@@ -379,13 +398,14 @@ p {
 
 .experience-container {
     background-color: #fff;
-    padding: 20px;
+    padding: 63px;
+    width: 70%
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     width: 90%; /* Adjust width as needed */
     text-align: center;
     transition: transform 0.3s ease-in-out;
-    margin: 10px auto;
+    
 }
 
 .experience-container:hover {
@@ -417,7 +437,7 @@ p {
     }
 
     .experience-container {
-        width: 70%;
+        width: 83%;
     }
 }
 
@@ -538,6 +558,7 @@ p {
     background-color: #9f86c030;
     background-size: cover;
     height: 100vh;
+    padding-bottom: 100px;
 }
 
 .contact-section .title {
@@ -551,7 +572,7 @@ p {
 .contact-section .contact-content .column-left {
     color: black;
     float: left;
-    width: 30%;
+    width: unset;
     padding-left: 120px;
     padding-bottom: 30px;
 }
@@ -651,6 +672,7 @@ p {
 .audio-container {
     background-color: #fff;
     padding: 20px;
+    width: 284px;
     border-radius: 10px;
     box-shadow: 0 0 10px #9f86c030;
     margin-left: 30px;
@@ -669,7 +691,7 @@ audio {
 @media screen and (max-width: 768px) {
     .contact-section .contact-content .column-left,
     .contact-form {
-        width: 100%;
+        width: unset;
         float: none;
         margin: 0;
         padding: 15px;
@@ -684,22 +706,133 @@ audio {
     }
 }
 
+
+@media screen and (max-width: 365px) {
+    .contact-section .contact-content .column-left,
+    .contact-form {
+        width: unset;
+        float: none;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .contact-section .contact-content .column-left,
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 14px;
+    }
+
+    
+}
+
 .footer {
     text-transform: capitalize;
     height: 40px;
     text-align: center;
     margin-top: 0px;
     padding: 10px;
+    position: relative;
+    bottom: 0;
     background-color: whitesmoke;
     color: black;
 }
 
-/* Media query for screens smaller than 768px */
+
+@media screen and (min-width: 768px)  and (max-width: 1025px) {
+
+
+    .box-1 {
+        background: url(stock.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        color: #fff;
+        height: 385px;
+    }
+
+    .contact-form {
+        width: 435px;
+    }
+
+    .audio-container{
+        width: 455px;
+    }
+    
+    .background-video {
+        height: 40vh;
+    }
+
+    .about-section {
+        height: 50vh;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .footer {
         font-size: 14px;
     }
+
+    .contact-form {
+        width: 300px;
+    margin-left: 40px;
+    }
+
+    .audio-container {
+        width: 284px;
+        margin-left: 27px;
+    }
+
+    .background-video {
+        height: 30vh;
+    }
+    
 }
+
+@media only screen and (min-width: 350px) and (max-width: 415px) {
+    .footer {
+        font-size: 12px;
+        padding: 5px;
+        position: fixed; 
+        width: 100%; 
+        bottom: 0; 
+    }
+
+    .contact-section {
+       
+        height: unset;
+        padding-bottom: 100px;
+    }
+
+    .box-1 {
+        height: 420px;
+        width: 79%
+    }
+
+    .second {
+        height: 420px;
+    }
+
+    .education-container, .education-container1, .education-container2, .education-container3 {
+        
+        width: 79%;
+       
+    }
+
+    .experience-container {
+        
+        width: 83%;
+        padding: 27px;
+        
+        /* margin: 10px auto; */
+    }
+
+}
+
+
+
 
 /* Contact Section */
 
